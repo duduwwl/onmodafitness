@@ -42,7 +42,7 @@ export function Hero() {
         <div className="relative grid grid-cols-12 items-start gap-x-[clamp(0.75rem,1.6vw,1.75rem)]">
           {/* Pequena, 1:1 — foto real da loja */}
           <motion.figure
-            className="order-2 col-span-5 col-start-8 -mt-16 lg:order-none lg:col-span-2 lg:col-start-1 lg:mt-0"
+            className="order-2 col-span-5 col-start-8 -mt-16 lg:order-none lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mt-0"
             style={reduce ? undefined : { y: driftSlow }}
           >
             <Photo
@@ -58,7 +58,7 @@ export function Hero() {
           </motion.figure>
 
           {/* Grande, 3:4 — abre como um obturador */}
-          <figure className="order-1 col-span-9 lg:order-none lg:col-span-4 lg:col-start-4">
+          <figure className="order-1 col-span-9 lg:order-none lg:col-span-4 lg:col-start-4 lg:row-start-1">
             <div className={reduce ? "" : "shutter"}>
               <Photo
                 src="photo-1645810798586-08e892108d67"
@@ -74,7 +74,7 @@ export function Hero() {
 
           {/* Paisagem 16:10 — corre para fora da margem direita */}
           <motion.figure
-            className="order-3 col-span-12 mt-6 -mr-[var(--gutter)] -ml-[var(--gutter)] lg:order-none lg:col-span-4 lg:col-start-9 lg:mt-0 lg:ml-0"
+            className="order-3 col-span-12 mt-6 -mr-[var(--gutter)] -ml-[var(--gutter)] lg:order-none lg:col-span-4 lg:col-start-9 lg:row-start-1 lg:mt-0 lg:ml-0"
             style={reduce ? undefined : { y: drift }}
           >
             <Photo
@@ -91,7 +91,7 @@ export function Hero() {
           </motion.figure>
 
           {/* Texto no desktop: sob a foto pequena */}
-          <div className="hidden lg:col-span-3 lg:col-start-1 lg:row-start-1 lg:mt-[calc(15vw+3.5rem)] lg:block">
+          <div className="hidden lg:col-span-3 lg:col-start-1 lg:row-start-1 lg:mt-[calc(15.5vw+4.5rem)] lg:block">
             <HeroCopy />
           </div>
         </div>
@@ -107,7 +107,7 @@ function HeroCopy() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
     >
-      <p className="text-[var(--text-lead)] leading-snug">Performance, conforto e estilo para acompanhar cada movimento.</p>
+      <p className="text-lead leading-snug">Performance, conforto e estilo para acompanhar cada movimento.</p>
       <div className="mt-6 flex flex-wrap gap-3">
         <Link href="/produtos/" className="btn btn-ink">
           Explorar coleção

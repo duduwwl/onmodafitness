@@ -22,7 +22,7 @@ export function InstagramGallery() {
     <section aria-labelledby="instagram-title" className="container-x pt-28 lg:pt-44">
       <InView className="flex flex-wrap items-end justify-between gap-6">
         <div>
-          <h2 id="instagram-title" className="text-[var(--text-title)]">
+          <h2 id="instagram-title" className="text-title">
             Quem usa ON
           </h2>
           <p className="mt-4 max-w-[44ch] text-[var(--color-ink-soft)]">

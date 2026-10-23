@@ -9,7 +9,7 @@ export function About() {
         <h2 id="sobre-title" className="text-[clamp(2.5rem,1.6rem+3.4vw,4rem)]">
           A dona veste primeiro.
         </h2>
-        <p className="mt-6 max-w-[46ch] text-[var(--text-lead)] leading-snug">
+        <p className="mt-6 max-w-[46ch] text-lead leading-snug">
           A ON é uma loja de moda fitness em Lavras. Cada peça é escolhida a dedo e testada no próprio treino antes de entrar na arara: se não aguenta um agachamento, não entra.
         </p>
       </InView>

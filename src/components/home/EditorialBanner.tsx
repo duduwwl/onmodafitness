@@ -28,7 +28,7 @@ export function EditorialBanner() {
       </motion.div>
       <span aria-hidden className="absolute inset-0 bg-[linear-gradient(to_top,rgba(17,17,17,0.72)_0%,rgba(17,17,17,0.15)_55%,transparent_80%)]" />
       <div className="on-dark container-x relative flex h-full flex-col justify-end pb-[clamp(2.5rem,7vh,5rem)] text-[var(--color-paper)]">
-        <h2 id="editorial-title" className="max-w-[11ch] text-[var(--text-display)] leading-[0.9] font-light">
+        <h2 id="editorial-title" className="max-w-[11ch] text-display leading-[0.9] font-light">
           Seu movimento. Seu estilo.
         </h2>
         <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-4">

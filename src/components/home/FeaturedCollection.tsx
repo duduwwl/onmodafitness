@@ -20,7 +20,7 @@ export function FeaturedCollection() {
     <section ref={ref} aria-labelledby="colecao-title" className={reduce ? "relative py-28" : "relative h-[200svh] mt-28 lg:mt-44"}>
       <div className={reduce ? "" : "sticky top-0 flex h-[100svh] flex-col overflow-hidden"}>
         <div className="container-x pt-[calc(var(--header-h)+1.5rem)] text-center">
-          <h2 id="colecao-title" className="mx-auto max-w-[16ch] text-[var(--text-title)]">
+          <h2 id="colecao-title" className="mx-auto max-w-[16ch] text-title">
             Feita para acompanhar seu ritmo.
           </h2>
           <p className="mx-auto mt-4 max-w-[48ch] text-[var(--color-ink-soft)]">

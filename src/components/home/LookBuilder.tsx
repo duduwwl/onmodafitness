@@ -51,7 +51,7 @@ export function LookBuilder() {
     <section id="provador" aria-labelledby="provador-title" className="mt-28 bg-[var(--color-rose-wash)] py-24 lg:mt-44 lg:py-32">
       <div className="container-x grid gap-12 lg:grid-cols-12 lg:gap-x-[clamp(0.75rem,1.6vw,1.75rem)]">
         <InView className="lg:col-span-4">
-          <h2 id="provador-title" className="max-w-[12ch] text-[var(--text-title)]">
+          <h2 id="provador-title" className="max-w-[12ch] text-title">
             Monte seu look no provador.
           </h2>
           <p className="mt-5 max-w-[40ch]">

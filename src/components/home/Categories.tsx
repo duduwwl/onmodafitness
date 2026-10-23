@@ -22,7 +22,7 @@ export function Categories() {
   return (
     <section id="colecoes" aria-labelledby="categorias-title" className="pt-28 lg:pt-44">
       <InView className="container-x mb-10 grid grid-cols-12 lg:mb-16">
-        <h2 id="categorias-title" className="col-span-12 text-[var(--text-title)] lg:col-span-6 lg:col-start-3">
+        <h2 id="categorias-title" className="col-span-12 text-title lg:col-span-6 lg:col-start-3">
           Escolha por peça
         </h2>
         <p className="col-span-12 mt-4 max-w-[44ch] text-[var(--color-ink-soft)] lg:col-span-4 lg:col-start-9 lg:mt-0 lg:self-end">

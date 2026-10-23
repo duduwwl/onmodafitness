@@ -86,7 +86,7 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
       </div>
 
       <section aria-labelledby="relacionados-title" className="pt-28 lg:pt-40">
-        <h2 id="relacionados-title" className="text-[var(--text-title)]">
+        <h2 id="relacionados-title" className="text-title">
           Combina com
         </h2>
         <AnimatedGroup className="mt-10 grid grid-cols-2 gap-x-[clamp(0.75rem,1.6vw,1.75rem)] gap-y-12 lg:grid-cols-4">

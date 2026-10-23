@@ -8,7 +8,7 @@ export function FeaturedProducts() {
   return (
     <section aria-labelledby="desejados-title" className="container-x pt-28 lg:pt-40">
       <InView className="mb-10 flex flex-wrap items-end justify-between gap-4 lg:mb-14">
-        <h2 id="desejados-title" className="text-[var(--text-title)]">
+        <h2 id="desejados-title" className="text-title">
           Mais desejados
         </h2>
         <Link href="/produtos/?ordem=destaques" className="link-underline pb-1">
