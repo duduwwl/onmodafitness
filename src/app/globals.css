@@ -67,6 +67,8 @@ h1, h2, h3, h4 {
 
 p { text-wrap: pretty; }
 
+a, button, input, select, label { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+
 ::selection { background: var(--color-rose); color: var(--color-ink); }
 
 :focus-visible {

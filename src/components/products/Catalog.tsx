@@ -101,7 +101,7 @@ export function Catalog() {
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Buscar por nome, cor ou peça"
+              placeholder="Buscar por nome, cor ou peça…"
               className="h-12 w-full rounded-full bg-[var(--color-white)] pr-4 pl-11 outline-none placeholder:text-[#9c9893] focus-visible:shadow-[0_0_0_2px_var(--color-ink)] sm:max-w-[26rem]"
             />
           </div>
@@ -214,7 +214,7 @@ export function Catalog() {
                       <X className="size-5" aria-hidden />
                     </Dialog.Close>
                   </div>
-                  <div className="flex-1 overflow-y-auto px-5 pb-6">
+                  <div className="flex-1 overflow-y-auto overscroll-contain px-5 pb-6">
                     <ProductFilters filters={filters} onChange={update} onClear={clear} idPrefix="mob" />
                   </div>
                   <div className="bg-[var(--color-white)] px-5 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))]">

@@ -37,7 +37,7 @@ export function SearchDialog({ open, onOpenChange }: { open: boolean; onOpenChan
             </Dialog.Overlay>
             <Dialog.Content asChild forceMount aria-describedby={undefined}>
               <motion.div
-                className="fixed inset-x-0 top-0 z-[70] max-h-[90svh] overflow-y-auto bg-[var(--color-paper)] shadow-xl"
+                className="fixed inset-x-0 top-0 z-[70] max-h-[90svh] overflow-y-auto overscroll-contain bg-[var(--color-paper)] shadow-xl"
                 initial={{ y: "-100%" }}
                 animate={{ y: 0 }}
                 exit={{ y: "-100%" }}

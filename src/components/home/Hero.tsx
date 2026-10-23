@@ -42,7 +42,7 @@ export function Hero() {
         <div className="relative grid grid-cols-12 items-start gap-x-[clamp(0.75rem,1.6vw,1.75rem)]">
           {/* Pequena, 1:1 — foto real da loja */}
           <motion.figure
-            className="order-2 col-span-5 col-start-8 -mt-16 lg:order-none lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mt-0"
+            className="order-2 col-span-5 col-start-8 -mt-20 lg:order-none lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mt-0"
             style={reduce ? undefined : { y: driftSlow }}
           >
             <Photo
@@ -69,7 +69,7 @@ export function Hero() {
                 priority
               />
             </div>
-            <figcaption className="mt-2 text-[0.875rem] text-[var(--color-ink-soft)]">Top e legging para treino de força</figcaption>
+            <figcaption className="mt-2 max-w-[70%] text-[0.875rem] text-[var(--color-ink-soft)] lg:max-w-none">Top e legging para treino de força</figcaption>
           </figure>
 
           {/* Paisagem 16:10 — corre para fora da margem direita */}

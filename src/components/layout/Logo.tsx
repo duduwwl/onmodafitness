@@ -12,7 +12,7 @@ export function OnMark({ className, strokeWidth = 4.2 }: { className?: string; s
 
 export function Logo({ className, withText = true }: { className?: string; withText?: boolean }) {
   return (
-    <span className={cn("inline-flex items-center gap-2.5", className)}>
+    <span translate="no" className={cn("inline-flex items-center gap-2.5", className)}>
       <OnMark className="h-7 w-auto" />
       {withText && (
         <span aria-hidden="true" className="font-display text-[0.84rem] leading-none font-light tracking-[0.22em] uppercase">

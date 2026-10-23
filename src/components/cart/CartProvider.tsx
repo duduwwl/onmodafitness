@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { toast } from "sonner";
 import type { CartLine, Product, Size } from "@/types/product";
 
@@ -95,7 +95,18 @@ export function CartProvider({ children }: { children: ReactNode }) {
     );
   }, []);
 
-  const clear = useCallback(() => setLines([]), []);
+  const linesRef = useRef(lines);
+  useEffect(() => {
+    linesRef.current = lines;
+  }, [lines]);
+
+  const clear = useCallback(() => {
+    const backup = linesRef.current;
+    setLines([]);
+    if (backup.length) {
+      toast("Sacola esvaziada", { action: { label: "Desfazer", onClick: () => setLines(backup) } });
+    }
+  }, []);
 
   const value = useMemo<CartContextValue>(() => {
     const count = lines.reduce((n, l) => n + l.quantity, 0);

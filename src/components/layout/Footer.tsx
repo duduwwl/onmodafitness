@@ -18,6 +18,8 @@ export function Footer() {
         src={bg}
         alt=""
         aria-hidden
+        width={2000}
+        height={1300}
         loading="lazy"
         className="absolute inset-0 h-full w-full object-cover object-[60%_30%] brightness-[0.42]"
       />

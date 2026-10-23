@@ -96,10 +96,10 @@ export function ProductCard({ product, sizes = "(min-width:1024px) 25vw, (min-wi
                   type="button"
                   onClick={() => setPicking(true)}
                   disabled={available.length === 0}
-                  className="btn btn-light !min-h-11 !px-4 text-[0.9rem] transition-[opacity,transform] duration-300 lg:translate-y-2 lg:opacity-0 lg:group-focus-within:translate-y-0 lg:group-focus-within:opacity-100 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 [@media(hover:none)]:!translate-y-0 [@media(hover:none)]:!opacity-100"
+                  className="btn btn-light !min-h-11 !px-3.5 sm:!px-4 text-[0.9rem] transition-[opacity,transform] duration-300 lg:translate-y-2 lg:opacity-0 lg:group-focus-within:translate-y-0 lg:group-focus-within:opacity-100 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 [@media(hover:none)]:!translate-y-0 [@media(hover:none)]:!opacity-100"
                   aria-label={`Adicionar ${product.name} à sacola`}
                 >
-                  <Plus className="size-4" aria-hidden /> Adicionar
+                  <Plus className="size-4" aria-hidden /> <span className="hidden sm:inline">Adicionar</span>
                 </button>
               </motion.div>
             )}
@@ -107,7 +107,7 @@ export function ProductCard({ product, sizes = "(min-width:1024px) 25vw, (min-wi
         </div>
       </div>
 
-      <div className="mt-3 flex items-start justify-between gap-3">
+      <div className="mt-3 flex flex-col gap-0.5 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
         <div className="min-w-0">
           <h3 className="font-sans text-[1rem] leading-snug font-medium tracking-normal">
             <Link href={href} className="hover:underline">
@@ -118,7 +118,7 @@ export function ProductCard({ product, sizes = "(min-width:1024px) 25vw, (min-wi
             {categoryLabel(product.category)} · {product.sizes[0]}–{product.sizes[product.sizes.length - 1]}
           </p>
         </div>
-        <p className="shrink-0 tabular-nums">{formatPrice(product.price)}</p>
+        <p className="shrink-0 tabular-nums font-medium sm:font-normal">{formatPrice(product.price)}</p>
       </div>
       {product.colors.length > 0 && (
         <div className="mt-2 flex items-center gap-1.5" role="radiogroup" aria-label={`Cores de ${product.name}`}>

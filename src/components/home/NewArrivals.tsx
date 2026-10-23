@@ -52,10 +52,10 @@ export function NewArrivals() {
                   href={`/produtos/${p.slug}/`}
                   onMouseEnter={() => setActive(p)}
                   onFocus={() => setActive(p)}
-                  className="group grid grid-cols-[1fr_auto] items-baseline gap-x-4 gap-y-0.5 py-3 sm:grid-cols-[7.5rem_1fr_auto]"
+                  className="group grid grid-cols-[1fr_auto] items-baseline gap-x-4 gap-y-0.5 py-3 sm:grid-cols-[9.5rem_1fr_auto]"
                 >
-                  <span className="text-[0.9rem] text-[var(--color-ink-soft)] sm:col-auto">
-                    {categories.find((c) => c.slug === p.category)?.label} · {fmtDate.format(new Date(`${p.releaseDate}T12:00:00`)).replace(".", "")}
+                  <span className="whitespace-nowrap text-[0.9rem] text-[var(--color-ink-soft)] sm:col-auto">
+                    {categories.find((c) => c.slug === p.category)?.label} · {fmtDate.format(new Date(`${p.releaseDate}T12:00:00`)).replace(" de ", " ").replace(".", "")}
                   </span>
                   <span className="order-3 col-span-2 font-medium sm:order-none sm:col-span-1">
                     <span className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 group-hover:bg-[length:100%_1px]">

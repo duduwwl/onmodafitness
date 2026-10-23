@@ -64,7 +64,7 @@ export function CartDrawer() {
                   </div>
                 ) : (
                   <>
-                    <ul className="flex-1 overflow-y-auto px-6">
+                    <ul className="flex-1 overflow-y-auto overscroll-contain px-6">
                       <AnimatePresence initial={false}>
                         {lines.map((line) => (
                           <CartItem key={line.key} line={line} />

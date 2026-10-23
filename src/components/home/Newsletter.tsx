@@ -61,6 +61,8 @@ export function Newsletter() {
                     type="email"
                     inputMode="email"
                     autoComplete="email"
+                    name="email"
+                    spellCheck={false}
                     value={email}
                     onChange={(e) => {
                       setEmail(e.target.value);

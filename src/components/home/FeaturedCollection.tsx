@@ -10,9 +10,9 @@ export function FeaturedCollection() {
   const ref = useRef<HTMLElement>(null);
   const reduce = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
-  const centerY = useTransform(scrollYProgress, [0, 0.85], ["58%", "0%"]);
-  const centerScale = useTransform(scrollYProgress, [0, 0.85], [0.82, 1]);
-  const sideY = useTransform(scrollYProgress, [0, 0.85], ["78%", "6%"]);
+  const centerY = useTransform(scrollYProgress, [0, 0.85], ["30%", "0%"]);
+  const centerScale = useTransform(scrollYProgress, [0, 0.85], [0.9, 1]);
+  const sideY = useTransform(scrollYProgress, [0, 0.85], ["44%", "6%"]);
   const leftX = useTransform(scrollYProgress, [0, 0.85], ["0%", "-18%"]);
   const rightX = useTransform(scrollYProgress, [0, 0.85], ["0%", "18%"]);
 

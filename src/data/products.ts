@@ -61,8 +61,10 @@ const fabricMesh =
   "Composição demonstrativa: tela 100% poliéster com microfuros, leve e com transparência suave.";
 
 /** Galeria: imagem principal + recortes de detalhe da mesma foto */
+const storePositions: Record<string, string> = { "ig:ig-03": "50% 85%" };
+
 function gallery(src: string, alt: string): ProductImage[] {
-  if (src.startsWith("ig:")) return [{ src, alt, fromStore: true, position: "50% 20%" }];
+  if (src.startsWith("ig:")) return [{ src, alt, fromStore: true, position: storePositions[src] ?? "50% 20%" }];
   return [
     { src, alt },
     { src: `${src}#detalhe-superior`, alt: `${alt} — detalhe da parte superior` },
