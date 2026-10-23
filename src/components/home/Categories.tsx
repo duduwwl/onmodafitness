@@ -72,7 +72,7 @@ export function Categories() {
             >
               <Photo src={p.img} alt={p.alt} ratio={0.6} width={600} sizes="64vw" className="!absolute inset-0 !aspect-auto h-full" />
               <span aria-hidden className="absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(to_top,rgba(17,17,17,0.6),transparent)]" />
-              <span className="absolute bottom-3 left-3 right-3 text-[var(--color-paper)]">
+              <span className="absolute bottom-4 left-4 right-4 text-[var(--color-paper)]">
                 <span className="block font-display text-[1.15rem] leading-tight">{p.label}</span>
                 <span className="text-[0.875rem] text-white/80">{count} peças</span>
               </span>

@@ -27,7 +27,7 @@ export function Newsletter() {
     <section aria-labelledby="newsletter-title" className="container-x pt-40 pb-32 lg:pt-52 lg:pb-44">
       <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-x-[clamp(0.75rem,1.6vw,1.75rem)]">
         <h2 id="newsletter-title" className="max-w-[18ch] text-[clamp(1.6rem,1.1rem+2vw,2.25rem)] leading-[1.12] font-light lg:col-span-5">
-          Receba primeiro os lançamentos e as reposições da arara.
+          Novidades da arara, antes de todo mundo.
         </h2>
         <div className="hidden lg:col-span-2 lg:col-start-7 lg:block">
           <Photo src="ig:ig-09" alt="Blusas de tela coloridas da ON" ratio={1} width={360} sizes="12vw" position="50% 35%" />

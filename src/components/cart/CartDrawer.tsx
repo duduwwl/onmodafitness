@@ -64,7 +64,7 @@ export function CartDrawer() {
                   </div>
                 ) : (
                   <>
-                    <ul className="flex-1 overflow-y-auto px-6 [&>li+li]:border-t [&>li+li]:border-[var(--color-stone)]">
+                    <ul className="flex-1 overflow-y-auto px-6">
                       <AnimatePresence initial={false}>
                         {lines.map((line) => (
                           <CartItem key={line.key} line={line} />

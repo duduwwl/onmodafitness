@@ -15,7 +15,7 @@ export function Logo({ className, withText = true }: { className?: string; withT
     <span className={cn("inline-flex items-center gap-2.5", className)}>
       <OnMark className="h-7 w-auto" />
       {withText && (
-        <span aria-hidden="true" className="font-display text-[0.8rem] leading-none font-light tracking-[0.22em] uppercase">
+        <span aria-hidden="true" className="font-display text-[0.84rem] leading-none font-light tracking-[0.22em] uppercase">
           ModΛ Fitness
         </span>
       )}

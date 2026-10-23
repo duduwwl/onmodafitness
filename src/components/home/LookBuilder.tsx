@@ -57,10 +57,9 @@ export function LookBuilder() {
           <p className="mt-5 max-w-[40ch]">
             Na loja, a gente te ajuda a combinar as peças. Aqui você testa antes: escolha a parte de cima e a de baixo e veja o look inteiro.
           </p>
-          <div className="mt-8 flex items-baseline justify-between gap-4 lg:block">
-            <p className="text-[0.95rem] text-[var(--color-ink-soft)]">Look completo</p>
-            <p className="font-display text-[clamp(2rem,3vw,2.75rem)] leading-none tabular-nums">{formatPrice(total)}</p>
-          </div>
+          <p className="mt-8 font-display text-[clamp(1.6rem,2.4vw,2.25rem)] leading-tight tabular-nums">
+            Look completo por {formatPrice(total)}
+          </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <button type="button" onClick={addLook} className="btn btn-ink">
               Levar o look

@@ -170,7 +170,7 @@ export function ProductDetails({ product }: { product: Product }) {
             ),
           },
         ].map((item) => (
-          <Accordion.Item key={item.id} value={item.id} className="border-t border-[var(--color-stone)] last:border-b">
+          <Accordion.Item key={item.id} value={item.id} className="mb-1.5 bg-[var(--color-white)] px-5">
             <Accordion.Header>
               <Accordion.Trigger className="group flex w-full items-center justify-between py-4 text-left font-medium">
                 {item.title}

@@ -105,14 +105,13 @@ p { text-wrap: pretty; }
 .btn[disabled], .btn[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; transform: none; }
 
 .link-underline {
-  background-image: linear-gradient(currentColor, currentColor);
-  background-size: 100% 1px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.35s var(--ease-out-soft);
-  padding-bottom: 2px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  text-decoration-color: currentColor;
+  transition: text-decoration-color 0.3s, text-underline-offset 0.3s var(--ease-out-soft);
 }
-.link-underline:hover { background-size: 0% 1px; background-position: 100% 100%; }
+.link-underline:hover { text-underline-offset: 0.45em; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
 
 /* Imagem com efeito "obturador" na entrada */
 .shutter { animation: var(--animate-shutter); }
