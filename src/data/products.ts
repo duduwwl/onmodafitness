@@ -496,7 +496,7 @@ function buildStock(seed: string, sizes: Size[], out: Size[] = []) {
   for (const ch of seed) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
   const stock: Partial<Record<Size, number>> = {};
   sizes.forEach((s, i) => {
-    stock[s] = out.includes(s) ? 0 : ((h >> (i * 3)) % 9) + 1;
+    stock[s] = out.includes(s) ? 0 : ((h >>> (i * 3)) % 7) + 2;
   });
   return stock;
 }
